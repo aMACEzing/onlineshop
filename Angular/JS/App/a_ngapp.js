@@ -2,6 +2,6 @@
 (
     function () {
         'use strict';
-        app = angular.module('app', ['ui.router', 'ngAria', 'ngCookies', 'ngMessages', 'ui.select', 'ngSanitize', 'wc.directives', 'cfp.hotkeys', 'ui.bootstrap','datatables', 'ngAnimate']);
+        app = angular.module('app', ['ui.router', 'ngAria', 'ngCookies', 'ngMessages', 'ngSanitize', 'wc.directives', 'cfp.hotkeys', 'ui.bootstrap', 'ngAnimate']);
     }
 )();

@@ -2,7 +2,7 @@ var app;
 (
     function () {
         'use strict';
-        app = angular.module('app', ['ui.router', 'ngAria', 'ngCookies', 'ngMessages', 'ui.select', 'ngSanitize', 'wc.directives', 'cfp.hotkeys', 'ui.bootstrap','datatables', 'ngAnimate']);
+        app = angular.module('app', ['ui.router', 'ngAria', 'ngCookies', 'ngMessages', 'ngSanitize', 'wc.directives', 'cfp.hotkeys', 'ui.bootstrap', 'ngAnimate']);
     }
 )();
 
@@ -34,6 +34,12 @@ app.config(['$locationProvider', '$stateProvider', '$urlRouterProvider', '$urlMa
     $urlRouterProvider.otherwise('/');
   }
 ]);
+
+
+
+app.run(['$rootScope', '$location', '$state', function($rootScope, $location, state) {
+
+}]);
 
 app.controller('mainCtrl', ['$rootScope', '$scope', '$http', 'dataService', '$sanitize', '$compile', 'hotkeys', '$state', '$timeout', '$location', '$uibModal', function(rs, $s, $http, d, sanitize, comp, h, state, $timeout, $location, $modal) {
   $s.Request = function(action, params, encrypt, disableInterceptor, ignoreLoadingBar) {

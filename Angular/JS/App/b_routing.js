@@ -26,3 +26,9 @@ app.config(['$locationProvider', '$stateProvider', '$urlRouterProvider', '$urlMa
     $urlRouterProvider.otherwise('/');
   }
 ]);
+
+
+
+app.run(['$rootScope', '$location', '$state', function($rootScope, $location, state) {
+
+}]);
